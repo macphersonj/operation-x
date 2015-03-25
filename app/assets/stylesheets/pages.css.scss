@@ -1,0 +1,30 @@
+#splash {
+  background:image-url('splashbg.jpg') 50%;
+  height:100vh;
+  width:100%;
+  background-size:cover;
+  margin-top:-70px;
+}
+
+#searchbox {
+  width:100%;
+  background:rgba(255,255,255,0.8);
+  border-radius:10px;
+  border:1px solid white;
+  margin-top:10%;
+  padding:2rem;
+  .form-control {
+    padding:3rem;
+    font-size:3rem;
+  }
+  .btn {
+    padding:1rem;
+    font-size:2rem;  
+    width:100%;  
+  }
+  .dropdown-menu {
+    padding:1rem;
+    font-size:2rem;  
+    width:100%;  
+  }
+}

@@ -1,0 +1,52 @@
+#splash
+  .container
+    #searchbox.clearfix
+      %form{:role => "form"}
+        .form-group
+          %input.form-control{type: 'text', placeholder: 'Enter keywords'}
+        .row
+          .col-md-3
+            .dropdown 
+              %button#menu1.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
+                Location
+                %span.caret
+              %ul.dropdown-menu{"aria-labelledby" => "menu1", :role => "menu"}
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} HTML
+                
+          .col-md-3
+            .dropdown
+              %button#menu1.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
+                Work Type
+                %span.caret
+              %ul.dropdown-menu{"aria-labelledby" => "menu1", :role => "menu"}
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} HTML
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} CSS
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} JavaScript
+                %li.divider{:role => "presentation"}
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} About Us
+          .col-md-3
+            .dropdown
+              %button#menu1.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :type => "button"}
+                Category
+                %span.caret
+              %ul.dropdown-menu{"aria-labelledby" => "menu1", :role => "menu"}
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} HTML
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} CSS
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} JavaScript
+                %li.divider{:role => "presentation"}
+                %li{:role => "presentation"}
+                  %a{:href => "#", :role => "menuitem", :tabindex => "-1"} About Us
+                  
+          .col-md-3
+            %button.btn.btn-success{:type => "submit"} 
+              %span.glyphicon.glyphicon-search
+              Search
+      
