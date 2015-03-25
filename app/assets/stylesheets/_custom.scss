@@ -1,6 +1,13 @@
+$font-family-base:'Hind', sans-serif;
 $navbar-default-bg:#2c3e50;
 $navbar-default-color:#ffffff;
+$navbar-default-link-color:#ffffff;
 $icon-font-path: 'bootstrap/';
 
 @import 'bootstrap';
 
+
+
+.center {
+  text-align:center;
+}
