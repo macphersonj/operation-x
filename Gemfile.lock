@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/nerian/bootstrap-wysihtml5-rails.git
+  revision: c2474e4ae5fab944704939c1b64f7378c21cf47d
+  specs:
+    bootstrap-wysihtml5-rails (0.3.3.6)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: cdbc05eb508ad18a1fff746d2c4fa58c177ee837
   specs:
@@ -177,6 +184,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (< 2.0)
   bootstrap-sass
+  bootstrap-wysihtml5-rails!
   coffee-rails (~> 4.0.0)
   devise (~> 3.4.1)
   erb2haml
