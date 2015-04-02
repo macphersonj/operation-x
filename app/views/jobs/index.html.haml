@@ -3,10 +3,22 @@
     .col-md-3
     
     .col-md-9
+      .panel.panel-default
+        .panel-heading
+          Job Search
+        .panel-body
+          = search_form_for @search do |f|
+            .row
+              .col-md-10.form-group
+                = f.search_field :description_cont, class: "form-control"
+              .col-md-1.form-group
+                = f.submit class: "btn btn-success"
+
+        
       - @jobs.each do |job|
         .panel.panel-default
           .panel-heading
-            %strong 
+            %strong
               = job.title
           .panel-body
             = simple_format job.list_snippet

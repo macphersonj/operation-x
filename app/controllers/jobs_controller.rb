@@ -4,8 +4,10 @@ class JobsController < ApplicationController
   respond_to :html
 
   def index
-    @jobs = Job.all
-    respond_with(@jobs)
+    
+    @search = Job.search(params[:q])
+    @jobs = @search.result
+    # respond_with(@jobs)
   end
 
   def show
