@@ -23,6 +23,11 @@
     = f.text_field :close_date, class: "form-control", placeholder: "dd/mm/yyyy"
     
   .form-group
+    = f.label :location
+    %br/
+    = f.select :location, options_for_select([['Sydney', 'Sydney'], ['Melbourne', 'Melbourne'], ['Brisbane', 'Brisbane']])
+    
+  .form-group
     = f.label :list_snippet
     %br/
     = f.text_area :list_snippet, class: "form-control", placeholder: "This is what will be shown in the list view (max 250 char)", rows: "8"
