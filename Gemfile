@@ -22,7 +22,7 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
 gem 'bootstrap-wysihtml5-rails', github: 'nerian/bootstrap-wysihtml5-rails'
-gem 'ransack'
+gem 'pg_search'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
